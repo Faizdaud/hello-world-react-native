@@ -41,8 +41,8 @@ export default function App() {
         <Text>Decrement</Text>
       </TouchableHighlight>
       
-      <TouchableOpacity style={styles.button} onPress= {() => setCounter(0)}>
-        <Text>Reset</Text>
+      <TouchableOpacity style={styles.Reset} onPress= {() => setCounter(0)}>
+        <Text style={styles.btnText}>Reset</Text>
       </TouchableOpacity>
      
       
@@ -73,10 +73,10 @@ const styles = StyleSheet.create({
   },
 
   tinyLogo: {
-    width: 400,
-    height: 300,
-    marginTop:80,
-    marginBottom:80,
+    width: 350,
+    height: 150,
+    marginTop:20,
+    marginBottom:20,
   },
 
 
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#ff66ff",
     padding: 10,
-    margin: 20,
+    margin: 10,
     borderRadius: 20,
   },
 
@@ -106,10 +106,18 @@ const styles = StyleSheet.create({
 
   Reset: {
     alignItems: "center",
-    backgroundColor: "#ff66ff",
+    backgroundColor: "#DDDDDD",
+    color: "red",
     padding: 10,
     margin: 20,
-    borderRadius: 20,
+    borderRadius: 10,
+  },
+
+  btnText: {
+    color: "white",
+    fontSize: 20,
+    justifyContent: "center",
+    textAlign: "center",
   }
 
   
